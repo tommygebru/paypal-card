@@ -1,0 +1,381 @@
+*{box-sizing:border-box;}
+/************************************
+              RESPONSE
+************************************/
+
+.first-four{ /*background:rgba(0,0,128,.3);*/}
+
+.buttons{color:white; margin:30px; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-flow:row; -ms-flex-flow:row; flex-flow:row; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center; font-family: 'Dosis', sans-serif;}
+.buttons div{cursor:pointer; border:solid 2px; margin:0 20px; font-size:1.2em; border-radius: 3px; padding: 10px 15px; width:100px; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-flow:row; -ms-flex-flow:row; flex-flow:row; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;}
+.buttons div:hover:not(.btn-checkout){padding:7.5px; -webkit-transition:300ms; transition:300ms;}
+.buttons div{-webkit-transition:300ms;transition:300ms;}
+.btn-checkout{opacity:.4;}
+
+
+/************************************
+             CONTAINERS
+************************************/
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height:100vh;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://hd.unsplash.com/photo-1441986300917-64674bd600d8");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(150, 150, 150, .4));
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(150, 150, 150, .4));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.credit-card {
+  margin-top:125px;
+  height: 260px;
+  width: 400px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(350deg, #0195D4, #1B3588);
+  background: linear-gradient(100deg, #0195D4, #1B3588);
+  color: white;
+}
+
+/************************************
+             NAVIGATION
+************************************/
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0;
+  border-bottom: solid darkred 4px;
+  z-index:3;
+}
+.nav span,
+.nav h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; align-items:center;
+  font-family: 'Raleway', sans-serif;
+}
+.nav i {
+  margin: 10px 20px;
+}
+.nav h2:hover {
+  font-weight: 900;
+}
+.nav h2 {
+  font-size: 1.4em;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.nav span:hover,
+.nav h2:hover {
+  color: #001a66;
+  cursor: pointer;
+}
+.checkout{margin-right:25px;}
+.save{padding:0 0 0px 20px;}
+/************************************
+         LOGO-DESIGN-PAYPAL
+************************************/
+.leg1,
+.moon1 {
+  background-color: #253b80;
+}
+.leg2,
+.moon2 {
+  background-color: #179bd7;
+}
+.leg1,
+.leg2 {
+  height: 85px;
+  width: 25px;
+  border-radius: 3px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.moon1,
+.moon2 {
+  height: 70px;
+  width: 80px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 100%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.leg1,
+.leg2 {
+  position: absolute;
+  margin: -50px 0 0 -5px;
+}
+.letter2 {opacity:.7;
+  position: absolute;
+  margin: 21.4px;
+
+}
+.letter1 {opacity:.9;
+  position: absolute;
+}
+.brand-logo {
+  margin: 15px 75px 0 0;
+}
+/************************************
+       LOGO-DESIGN-MASTERCARD
+************************************/
+.red {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ED1C24;
+}
+.gold {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F7941E;
+  margin-left: -10px;
+}
+.mixer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 30px;
+}
+.mastercard h5 {
+  font-family: 'Changa One', cursive;
+  font-size: .75em;
+  text-shadow: 1px 1px blue;
+  margin-left: -67px;
+  margin-top: 13px;
+  z-index: 1;
+}
+/************************************
+            INPUT-FIELDS
+************************************/
+input::-webkit-input-placeholder {
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Nova Mono', monospace;
+}
+input::-moz-placeholder {
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Nova Mono', monospace;
+}
+input:-ms-input-placeholder {
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Nova Mono', monospace;
+}
+input::placeholder {
+  color: white;
+  letter-spacing: 4px;
+  font-family: 'Nova Mono', monospace;
+}
+input{border-radius:3px; border:none;/*border:solid 2px rgba(17,0,69,.1);
+ background-color: rgba(17,0,69,.3);*/ background-color: rgba(0,0,0,0);  font-family: 'Nova Mono', monospace;}
+input:focus {
+  background-image: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#account-number {
+  color: white;
+ /* border: none;
+  */
+  text-align: center;
+  font-size: 1.5em;
+  width: 92%;
+  margin:0 auto;
+  letter-spacing: 4px;
+  padding-bottom:5px;
+    z-index:1;
+}
+#expiration-date {
+  color:white;
+  /*border:none;*/
+  border:none;
+  text-align:center;
+  font-size:1.1em;
+  width:66px;
+  margin:0 auto;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}
+input.customer{
+  font-size:1.2;
+  width:192px;
+  color:white;
+  /*border:none;
+  */text-align:center;
+
+  margin:0 auto;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+/************************************
+            TYPOGRAPHY
+************************************/
+.small-text {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size:.5em;
+}
+.first-four {
+ letter-spacing:1px;
+}
+.debit{font-size:.8em; -webkit-transform:scale(1.2,1); transform:scale(1.2,1); }
+.brand-id, .debit {font-family: 'Contrail One', cursive;}
+.brand-id {font-size:1.2em;}
+.stretch {letter-spacing:-1px;
+-webkit-transform:scale(1.5,1);
+        transform:scale(1.5,1);
+}
+/************************************
+         CREDIT-CARD-LAYOUT
+************************************/
+.first-row {padding-top:25px;
+  margin:0 auto;
+  width:75%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}/*brand-id + prepaid*/
+
+.second-row{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
+}/*brand-logo*/
+
+.third-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 75px;
+}/*account-number*/
+
+.fourth-row {
+  margin:0 auto;
+  width:70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding:3px 0;
+}/*first-four + debit*/
+
+.fifth-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}/*valid-thru + date*/
+.valid-thru{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; padding:0 5px; z-index:1;}/*valid-thru*/
+.date{z-index:1; font-family: 'Nova Mono', monospace;
+}/*date*/
+
+.sixth-row {display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-pack:start; -webkit-justify-content:flex-start; -ms-flex-pack:start; justify-content:flex-start; margin-top:5px;
+}
+
+.name{margin:0 25px;
+}
+
+.mastercard{padding:0 10px;  margin:-50px 0 20px 15px;}
+/*name + mastercard*/
+
+/***************************
+        media query
+***************************/
+
+@media (max-width:500px) {
+  .nav span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-orient:vertical; -webkit-box-direction:normal; -webkit-flex-direction:column; -ms-flex-direction:column; flex-direction:column; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap; flex-wrap:wrap; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;
+     margin:0 auto; padding:0;}
+  .nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex; -webkit-box-pack:justify; -webkit-justify-content:space-between; -ms-flex-pack:justify; justify-content:space-between; margin:0 auto; padding:0; text-align:center;}
+
+
+
+
+}
