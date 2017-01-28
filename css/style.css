@@ -5,12 +5,18 @@
 
 .first-four{ /*background:rgba(0,0,128,.3);*/}
 
-.buttons{color:white; margin:30px; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-flow:row; -ms-flex-flow:row; flex-flow:row; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center; font-family: 'Dosis', sans-serif;}
+.buttons{color:#666; margin:30px; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-flow:row; -ms-flex-flow:row; flex-flow:row; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center; font-family: 'Dosis', sans-serif;}
 .buttons div{cursor:pointer; border:solid 2px; margin:0 20px; font-size:1.2em; border-radius: 3px; padding: 10px 15px; width:100px; display:-webkit-box; display:-webkit-flex; display:-ms-flexbox; display:flex; -webkit-flex-flow:row; -ms-flex-flow:row; flex-flow:row; -webkit-box-pack:center; -webkit-justify-content:center; -ms-flex-pack:center; justify-content:center;}
 .buttons div:hover:not(.btn-checkout){padding:7.5px; -webkit-transition:300ms; transition:300ms;}
 .buttons div{-webkit-transition:300ms;transition:300ms;}
 .btn-checkout{opacity:.4;}
 
+
+
+.flex{display:flex; justify-content:center; algin-items:center;}
+.row{flex-direction:row;}
+.column{flex-direction:column;}
+.wrap{flex-wrap:wrap;}
 
 /************************************
              CONTAINERS
@@ -24,41 +30,18 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  height:100vh;
   margin: 0 auto;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("https://hd.unsplash.com/photo-1441986300917-64674bd600d8");
-  background-repeat: no-repeat;
-  background-size:cover;
+    background:#f5f5f5;
+    width:100vw;
+	height:100vh;
 }
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, .6);
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, .1), rgba(150, 150, 150, .4));
-  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(150, 150, 150, .4));
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+
+
+
 .credit-card {
   margin-top:125px;
   height: 260px;
